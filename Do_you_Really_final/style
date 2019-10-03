@@ -1,0 +1,295 @@
+
+
+html {
+overflow-x:hidden;
+}
+
+
+body {
+  background:black;
+  overflow-x:hidden;
+
+}
+
+.background {
+ display:block;
+  z-index:-100000000000;
+  position:absolute;
+  top:16000px; 
+  left:-0px;
+  width:2550px;
+
+}
+
+
+.haveyoutried {
+font-size:70px;
+  font-family: apertura, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing:5px;
+  margin:80px;
+  margin-top:200px;
+
+  }
+
+
+
+
+.letmetellyou {
+  font-size:50px;
+  font-family: apertura, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing:5px;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:200px;
+  width:1200px;
+  z-index:90000000000;
+}
+
+.title {
+  width:2100px;
+  margin-top: 70px;
+  margin-left: 500px;
+  font-family: meatball, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250px;
+  color: white;
+  line-height:220px;
+}
+
+.need {
+  font-size: 342px;
+}
+
+.small-title {
+  font-size:70px;
+  font-family: apertura, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  line-height:16px; 
+  letter-spacing:7px;
+
+}
+
+ .down {
+  position:absolute;
+  top:390px;
+  left:565px;
+  }
+
+.gradient_text {
+  font-size:120px;
+  font-family: apertura, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  position:absolute;
+  top:275px;
+  
+  letter-spacing:2px;
+  color:black;
+  line-height:0;
+  z-index:10000;
+
+}
+.gradient_text.left {
+  left:150px;
+}
+.gradient_text.right {
+  right:150px;
+}
+
+.is-it {
+  font-family: meatball, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  color: white;
+  z-index: 60000;
+
+  letter-spacing:5px;
+  margin-top:1000px;
+  margin-left:150px;
+  margin-bottom:30px;
+
+}
+
+.center {
+  text-align:center;
+  margin-bottom:50px;
+}
+
+
+.image {
+  height:1350px;
+  position:absolute;
+  top:-180px;
+  left:250px;
+  z-index:-1;
+}
+
+.bar_gradient {
+  width:100vw;;
+
+  z-index:-1;
+  opacity: 0.7;
+
+}
+
+.flip {
+  transform: scaleX(-1);
+}
+
+.gradient-div {
+  
+  height:358px;
+  position:relative;
+  overflow:hidden;
+  transition:height 200ms ease-out;
+
+}
+.gradient-div p {
+  color:white;
+}
+.gradient-div.open {
+  height:3800px;
+}
+
+.open2 {
+  heigth:3400px;
+}
+
+.yes {
+  z-index:900000000;
+  font-weight:400;
+  margin-left:50px;
+
+}
+
+.yes:hover {
+
+    font-weight:700;
+    font-size:55pt;
+}
+
+.click {
+
+    font-weight:700;
+    font-size:55pt;
+}
+
+
+
+.phone {
+  display:block;
+  margin-right: auto;
+  margin-left: 50%;
+  margin-top: 800px;
+  margin-bottom:300px;
+  transform: translateX(-50%);
+  width:110vw;
+
+   }
+
+   .ipad {
+  display:block;
+  margin-right: auto;
+  margin-left: 70px;
+  margin-top: 500px;
+  margin-bottom:30px;
+  width:225vw;
+
+   }
+
+  .laptopdiv {
+  position:relative;
+ max-height:1000px;
+  }
+
+  .screen-2 {
+  position:relative;
+  top:2265px;
+  width:73.7%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0;
+  -webkit-animation-name: appear; 
+  -webkit-animation-duration: .1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes appearno {
+  from {opacity:0;}
+  to {opacity:1;}
+  }
+
+  @keyframes example {
+  0%   {opacity:0;}
+  25%  {opacity:1;}
+  27%  {opacity:0;}
+  29%  {opacity:1;}
+  31% {opacity:0;}
+
+}
+
+
+.laptop {
+  width: 90vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:30px;
+  margin-bottom:1100px;
+
+}
+
+.ewaste {
+  font-family: meatball, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 450px;
+  color: white;
+  z-index: 6;
+  font-variant: small-caps;
+  letter-spacing:10px;
+  position:absolute;
+  margin-left:500px;
+  margin-top: 300px;
+
+
+}
+
+.bar_gradient:hover {
+  opacity: 1;
+}
+
+
+.watch {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width:400px;
+   z-index:-5;
+   }
+
+
+.earth {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1800px;
+  margin-bottom:150px;
+   width:1000px;
+   }
+
+
