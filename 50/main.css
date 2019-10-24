@@ -1,0 +1,677 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+} 
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	cursor:default;
+
+
+}
+
+.margin {
+	margin-top: 50px;
+	margin-bottom:60px;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 160px;
+	width: 160px;
+	border-color:black;
+	border-width:8px;
+	border-style: solid;
+	border-radius: 15%;
+	margin: 10px auto;
+	padding: 0px;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+	cursor: pointer;
+	background-color: white;
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 58px;
+	text-align:center;
+	z-index:1000;
+
+}
+
+.pink {
+	background-color: #ffc8f0;
+	border-color: #d55386;
+	color:#d55386;
+}
+
+.shrink {
+	width:5px;
+	height:5px;
+	font-size:2px;
+
+
+}
+
+
+.smaller-text {
+	font-family: clarendon-text-pro, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/* example element 1 */
+
+#element-1:hover {
+  width:300px;
+  height:300px;
+  background-imge: linear-gradient(to right, blue, yellow);
+  animation: spin 1s alternate infinite;
+  font-size: 120px;
+  border-width: 12px;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(60deg);
+  }
+
+   50%{
+    transform: rotate(820deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+} 
+
+
+
+
+.left {
+	margin-right:500px;
+}
+
+#element-1:active {
+	background: pink;
+	opacity: 1;
+}
+
+.hidden {
+	opacity:0;
+}
+
+.show {
+	opacity:1;
+}
+
+
+
+/* example element 2 */
+
+.grow-and-go {
+
+	font-family: clarendon-text-pro, serif;
+	font-size: 900px;
+	font-style: normal;
+	animation: grow-and-go 3s alternate infinite;
+
+
+}
+
+
+@keyframes  grow-and-go{
+  0%{
+    transform: scale(100%);
+  }
+
+   50%{
+    transform: scale(33%);
+  }
+  100% {
+    transform: scale(0%);
+  }
+} 
+
+
+
+/* example element 3 is changed only via js */
+
+/* example element 4 */
+#element-4.gradient-background {
+	background: linear-gradient(blue, pink);
+	color: transparent;
+}
+
+/* example element 5 */
+.circle {
+	border-radius: 125px;
+}
+
+
+.red {
+	background-color:red;
+}
+
+.orange {
+	background-color:orange;
+}
+
+.yellow {
+	background-color:yellow;
+}
+
+.green {
+	background-color:green;
+}
+
+
+
+/* example element 6 */
+#element-6{
+	transition: none; 
+}
+
+
+.black {
+	background-color:black;
+}
+
+
+
+
+#div1 {
+  
+    opacity:0;
+    background-image:url(Yourcopy52.jpg);
+    position:absolute;
+    top:0px;
+    width:1300px;
+   
+
+    }
+
+    .drone{
+  animation: dronemovement 8s alternate infinite;
+}
+
+
+
+@keyframes dronemovement {
+  0%{
+    transform: translate(-60px) rotate(60deg);
+  }
+  20%{
+    transform: translate(200px,300px) rotate(190deg);
+  }
+  40% {
+    transform: translate(-500px,-400px) rotate(360deg);
+}
+  60% {
+    transform: translate(0px,300px) rotate(20deg);
+  }
+  80% {
+    transform: translate(-100px,0px) rotate(300deg);
+  }
+  100% {
+    transform: translate(500px,-400px) rotate(20deg);
+  }
+} 
+
+
+#element-11: :after {
+	content: '11';
+	color: black;
+	font-family: bungee, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 58px;
+	text-align:center;
+
+
+
+}
+
+
+#element-11:hover::after {
+	content: 'eleven';
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	text-align:center;
+
+} 
+
+#element-12 {
+ 
+}
+
+video {
+	position:absolute;
+	top:1860px;
+	left:820px;
+	opacity:0;
+	border-radius:9%;
+
+}
+
+.appear {
+	opacity:1;
+}
+
+
+#logo {
+	width:140px;
+	position:absolute;
+	top:2400px;
+	left:610px;
+	opacity:0;
+}
+
+
+.orbit {
+	animation: orbit .1s alternate infinite;
+}
+
+
+
+
+@keyframes orbit {
+  0%{
+    transform: translate(0px) rotate(0deg);
+  }
+  40%{
+    transform: translate(100px,0px) rotate(+90deg);
+  }
+  60% {
+    transform: translate(0px,100px) rotate(180deg);
+  }
+  80% {
+    transform: translate(-100px,0px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0px,100px) rotate(360deg);
+  }
+} 
+
+
+#pikachu {
+	width:150px;
+	position: absolute;
+	top:2755px;
+	left:-150px;
+	
+}
+
+
+.run {
+    animation: run 4s infinite;
+}
+
+@keyframes run {
+  0%{
+    transform: translate(0px) rotate(0deg);
+  }
+  40%{
+    transform: translate(400px,0px) rotate(10deg);
+  }
+  60% {
+    transform: translate(600px,0px) rotate(0deg);
+  }
+  80% {
+    transform: translate(1200px,0px) rotate(15deg);
+  }
+  100% {
+    transform: translate(1600px,0px) rotate(0deg);
+  }
+} 
+
+
+#element-18 {
+  width:160px;
+  height:160px;
+
+}
+
+#element-18:hover  {
+width:1600px;
+height:1600px;
+margin-left:-500px;
+font-size:550px;
+}
+
+#element-19 {
+	opacity:0;
+}
+
+#element-19:hover {
+	
+opacity:1;
+}
+
+
+
+#element-20 {
+	background-color: white;
+}
+
+#element-20 :hover {
+	background-color:#d3ff23;
+}
+
+
+
+.border {
+	border-color:#d3ff23;
+}
+
+#element-21 {
+	background-color:white;
+}
+
+.color-change {
+    animation: backcolor 2s infinite;
+}
+
+@keyframes backcolor {
+  0%{
+    background-color:red;
+  }
+  40%{
+    background-color:white;
+  }
+  60% {
+    background-color:red;
+  }
+  80% {
+    background-color:white;
+  }
+  100% {
+    background-color:red;
+  }
+} 
+
+
+.different-type {
+	font-family: apertura, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 120px;
+}
+
+
+
+.back-color {
+	background-image: linear-gradient(to right, blue, yellow, pink);
+	z-index:-999999;
+	opacity:0;
+
+}
+
+#element-23 {
+	border-radius:15%;
+	border-color:black;
+}
+
+#element-23:hover {
+	border-radius:100%;
+	border-color:white;
+}
+
+
+#element-24 {
+	transform: rotate(0deg)
+}
+
+#element-24:hover {
+	transform: rotate(180deg)
+}
+
+
+#element-27 {
+opacity:1;
+}
+
+
+#square {
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:-150px;
+	background-color:black;
+
+}
+
+.drop {
+	animation: drop 3s forwards;
+}
+
+@keyframes drop {
+  0%{
+    top:1000px;
+  }
+  40%{
+    top:3000px;
+  }
+  60% {
+    top:5000px;
+  }
+  80% {
+    top:7000px;
+  }
+  100% {
+    top:8800px;
+  }
+} 
+
+
+#website {
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	color:black;
+	font-style: normal;
+	font-size: 180px;
+	text-align:center;
+	position:absolute;
+	top:4440px;
+	left:-1000px;
+}
+
+.slide {
+	animation: slide 3s forwards;
+}
+
+@keyframes slide {
+  0%{
+    left:-1000px;
+  }
+
+  100% {
+    left:100px;
+  }
+} 
+
+
+a {
+	color:black;
+}
+
+
+
+.border-image {
+	border-image:linear-gradient(to right, pink, yellow);
+	border-width: 100px;
+}
+
+
+
+#rain {
+	width:2850px;
+	position:absolute;
+	top:-10000px;
+	left:-130px;
+	z-index:-200000000000000;
+}
+
+
+.slidefromtop {
+	animation: slidefromtop 3s forwards;
+}
+
+@keyframes slidefromtop {
+  0%{
+    top:-10000px;
+  }
+
+  100% {
+    top:0px;
+  }
+} 
+
+
+.textshadow {
+	text-shadow: 0 0 10px #FF0000, 0 0 20px #0000FF;
+}
+
+.textshadowextreme {
+	text-shadow: 0 0 50px blue, 0 0 100px red;
+}
+
+
+#element-36 {
+
+
+}
+
+
+#element-36:hover {
+	box-shadow: 30px 10px;
+	transform: translate(-31px, -10px);
+
+}
+
+
+.box-shadow {
+	box-shadow: 30px 10px;
+	transform: translate(-31px, -10px);
+}
+
+
+.white {
+    color:white;
+}
+
+.transparent {
+	opacity:.3;
+	color:white;
+	background-color:gray;
+	border-color:gray;
+
+}
+
+#element-40 {
+	z-index:90000000000000000000000000;
+}
+
+.dropbottom {
+	position:absolute;
+	left:40px;
+	margin-left:0px;
+	top:6500px;
+}
+
+
+.height {
+	height:1000px;
+	border-width: 0px;
+}
+
+
+.pulse {
+	animation: pulse .6s alternate infinite;
+}
+
+
+
+@keyframes pulse {
+  0%{
+    width:160px;
+    height:160px;
+    font-size:58px;
+  }
+
+ 99% {
+    width:320px;
+    height:320px;
+    font-size:15px;
+  }
+
+ 99% {
+    width:320px;
+    height:320px;
+    font-size:15px;
+  }
+
+  99% {
+    width:320px;
+    height:320px;
+    font-size:15px;
+  }
+
+  100% {
+    width:320px;
+    height:320px;
+    font-size:15px;
+  }
+} 
+
+
+a {
+	color:black;
+}
+
+.float {
+	animation: float 2s alternate infinite;
+}
+
+@keyframes float {
+  0%{
+    transform: translate(0px, -50px);
+    color: black;
+  }
+
+  30%{
+    transform: translate(0px, 20px);
+    color: red;
+  }
+
+ 60%{
+    transform: translate(0px, -20px);
+    color: black;
+  }
+
+  100% {
+   transform: translate(0px, 0px);
+   color: red;
+  }
+} 
+.purple {
+	background-color:purple;
+}
+
+
+
+.blue {
+	background-color:blue;
+}
+
+

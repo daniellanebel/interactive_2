@@ -1,0 +1,45 @@
+
+body {
+	background-color:black;
+	margin:0px;
+	margin-top:0px;
+}
+
+#down {
+	margin:0px;
+	margin-top:0px;
+}
+
+
+
+
+.faces-1 {
+	width:250px;
+	margin:10px;
+
+}
+
+
+
+#faces-div {
+display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+	width:1400px;
+	top:-50px;
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
