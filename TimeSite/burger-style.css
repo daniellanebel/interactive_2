@@ -1,0 +1,122 @@
+body {
+	background: #FFFCEF;	
+	color: white;
+	font-family: monaco;
+
+/* 	display: grid; */
+/* 	align-items: center; */
+/*   justify-items: center; */
+
+  min-height: 100vh;
+  background-image:url(red_square.svg);
+  background-size: 173px;
+
+}
+
+.burger {
+  width:35px;
+  
+  display:inline-block;
+  content: url("Mac_Burger-01.png");
+  left-margin:2px;
+   right-margin:2px;
+  top-margin:-20px;
+  bottom-margin:-20px;
+}
+
+.text {
+font-family: sutro-shaded-primary, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:80px;
+position:absolute;
+top:150px;
+left:50px;
+right:50px;
+-webkit-text-stroke: 2px #FF2600;
+color:#FFEC00;
+text-align:center;
+}
+
+
+
+
+.text:hover {
+  font-family: sutro-shaded-fill, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+color:red;
+font-size:80px;
+
+
+}
+
+.text-2 {
+  font-family: sutro-shaded-hatching, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position:absolute;
+top:473px;
+left:50px;
+right:50px;
+color:#FF2600;
+font-size:80px;
+text-align:center;
+}
+
+
+
+
+.text-2:hover {
+  font-family: sutro-deluxe-fill, serif;
+
+font-weight: 400;
+
+font-style: normal;
+color:red;
+}
+
+
+#image {
+
+position:absolute;
+top:470px;
+left:39.4%;
+animation: dance 2.2s alternate infinite;
+}
+
+
+
+@keyframes dance {
+  0%{
+    transform: rotate(5deg);
+  }
+
+   50%{
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+} 
+
+.aFiveMinute {
+	background: white;
+}
+
+#secondHand {
+  position:absolute;
+  top:50px;
+  left:250px;
+  width:2px;
+  height:200px;
+  background:red;
+  
+  /* spin the second hand from the middle of the clock */
+  transform-origin:50% 100%;
+}
+
+
+
